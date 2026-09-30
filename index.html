@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Astraea — Next-generation intelligent orchestration platform for modern engineering teams.">
+  <title>Astraea — Intelligent Cloud & Systems Orchestration</title>
+  
+  <!-- Preconnect for typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background decorative light orbs -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- ==================== 1. NAVIGATION HEADER ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Astraea Homepage">
+        <span class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>
+          </svg>
+        </span>
+        <span class="brand-name">Astraea<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta-mobile">
+          <a href="#contact" class="btn btn-primary btn-sm w-full">Start Free Trial</a>
+        </div>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Theme Switcher Button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Switch to light theme" title="Toggle dark/light theme">
+          <svg class="theme-icon icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">Get Started</a>
+
+        <!-- Hamburger Button for Mobile -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <main>
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Astraea Engine v3.4 Released</span>
+            <svg class="badge-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+          
+          <h1 class="hero-title">
+            Orchestrate complex cloud workloads with <span class="gradient-text">interstellar clarity</span>.
+          </h1>
+          
+          <p class="hero-subtitle">
+            Astraea bridges the gap between infrastructure automation, distributed systems, and real-time observability. Deploy resilient pipelines in minutes with zero guesswork.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Start Building Free</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#features" class="btn btn-secondary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+              <span>Explore Architecture</span>
+            </a>
+          </div>
+
+          <!-- Social Proof Bar -->
+          <div class="hero-proof">
+            <div class="avatar-group">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&auto=format&fit=crop&q=80" alt="Engineer avatar" class="avatar">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80" alt="Engineer avatar" class="avatar">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&auto=format&fit=crop&q=80" alt="Engineer avatar" class="avatar">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&auto=format&fit=crop&q=80" alt="Engineer avatar" class="avatar">
+            </div>
+            <div class="proof-text">
+              <div class="stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <p>Trusted by <strong>14,000+</strong> engineering teams worldwide</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Dashboard / Glass Mockup -->
+        <div class="hero-visual">
+          <div class="dashboard-mockup glass-card">
+            <!-- Mockup Header -->
+            <div class="mockup-header">
+              <div class="window-controls">
+                <span class="control red"></span>
+                <span class="control yellow"></span>
+                <span class="control green"></span>
+              </div>
+              <div class="mockup-url-bar">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>cluster.astraea.io/prod-us-east-1</span>
+              </div>
+              <span class="status-indicator">
+                <span class="pulse-dot"></span> Live
+              </span>
+            </div>
+
+            <!-- Mockup Body -->
+            <div class="mockup-content">
+              <div class="mockup-stats-row">
+                <div class="mockup-stat-chip">
+                  <span class="chip-label">Mesh Health</span>
+                  <span class="chip-value text-emerald">99.98%</span>
+                </div>
+                <div class="mockup-stat-chip">
+                  <span class="chip-label">Node Count</span>
+                  <span class="chip-value">1,482 Active</span>
+                </div>
+                <div class="mockup-stat-chip">
+                  <span class="chip-label">P99 Latency</span>
+                  <span class="chip-value text-cyan">4.2 ms</span>
+                </div>
+              </div>
+
+              <!-- Terminal / Code preview card -->
+              <div class="mockup-terminal">
+                <div class="terminal-line"><span class="term-dim">$</span> <span class="term-cmd">astraea cluster sync</span> <span class="term-arg">--env=production</span></div>
+                <div class="terminal-line term-success"><span class="term-bullet">✔</span> Cluster topology mapped (48 regions)</div>
+                <div class="terminal-line term-success"><span class="term-bullet">✔</span> Zero-trust mTLS channels established</div>
+                <div class="terminal-line term-cyan"><span class="term-bullet">ℹ</span> Autoscaling nodes: 1,482 synchronized</div>
+              </div>
+
+              <!-- Animated Chart Simulation -->
+              <div class="mockup-chart-box">
+                <div class="chart-header">
+                  <span>Throughput (RPS)</span>
+                  <span class="chart-tag">+24.8% vs last hr</span>
+                </div>
+                <div class="chart-bars">
+                  <div class="chart-bar" style="--height: 45%;"></div>
+                  <div class="chart-bar" style="--height: 60%;"></div>
+                  <div class="chart-bar" style="--height: 50%;"></div>
+                  <div class="chart-bar" style="--height: 75%;"></div>
+                  <div class="chart-bar" style="--height: 90%;"></div>
+                  <div class="chart-bar" style="--height: 65%;"></div>
+                  <div class="chart-bar active-bar" style="--height: 95%;"></div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Floating Glass Pill 1 -->
+            <div class="floating-badge badge-top-right glass-card">
+              <div class="pulse-emerald"></div>
+              <div>
+                <p class="float-title">Failover Guard</p>
+                <p class="float-sub">0 dropped packets</p>
+              </div>
+            </div>
+
+            <!-- Floating Glass Pill 2 -->
+            <div class="floating-badge badge-bottom-left glass-card">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <div>
+                <p class="float-title">SOC-2 Type II</p>
+                <p class="float-sub">Compliant by default</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. ABOUT SECTION ==================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">ABOUT THE PLATFORM</span>
+          <h2 class="section-title">Born for teams refusing to compromise on velocity or reliability.</h2>
+          <p class="section-description">
+            Modern distributed architectures have grown excessively tangled. Astraea was engineered from the ground up to strip away operational friction, synthesizing container orchestration, edge telemetry, and declarative compliance into a singular, cohesive plane.
+          </p>
+        </div>
+
+        <!-- Highlight Pillars & Counters Grid -->
+        <div class="metrics-grid">
+          <div class="metric-card glass-card">
+            <div class="metric-number-wrap">
+              <span class="metric-number" data-target="99.99" data-decimals="2">0</span><span class="metric-suffix">%</span>
+            </div>
+            <h3 class="metric-label">Guaranteed SLA Uptime</h3>
+            <p class="metric-desc">Autonomous multi-region failovers ensure zero degradation during infrastructure disruptions.</p>
+          </div>
+
+          <div class="metric-card glass-card">
+            <div class="metric-number-wrap">
+              <span class="metric-number" data-target="10" data-decimals="0">0</span><span class="metric-suffix">M+</span>
+            </div>
+            <h3 class="metric-label">Invocations Per Second</h3>
+            <p class="metric-desc">Blazing throughput engineered on Rust core primitives to handle planetary-scale traffic bursts.</p>
+          </div>
+
+          <div class="metric-card glass-card">
+            <div class="metric-number-wrap">
+              <span class="metric-prefix">&lt;</span><span class="metric-number" data-target="12" data-decimals="0">0</span><span class="metric-suffix">ms</span>
+            </div>
+            <h3 class="metric-label">Global P99 Dispatch</h3>
+            <p class="metric-desc">Edge nodes strategically distributed across 320+ metropolitan data centers worldwide.</p>
+          </div>
+
+          <div class="metric-card glass-card">
+            <div class="metric-number-wrap">
+              <span class="metric-number" data-target="250" data-decimals="0">0</span><span class="metric-suffix">k+</span>
+            </div>
+            <h3 class="metric-label">Engineers Empowered</h3>
+            <p class="metric-desc">From bootstrapped startups to Fortune 50 platforms standardizing deployment stacks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. FEATURES SECTION ==================== -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">CORE CAPABILITIES</span>
+          <h2 class="section-title">Engineered with extreme precision. Built for boundless scale.</h2>
+          <p class="section-description">
+            Experience three foundational cornerstones that make Astraea the benchmark for next-generation platform engineering.
+          </p>
+        </div>
+
+        <!-- Exactly 3 Interactive Feature Cards -->
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <article class="feature-card glass-card" tabindex="0">
+            <div class="feature-card-glow" aria-hidden="true"></div>
+            <div class="feature-icon-wrapper icon-indigo">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-title">Autonomous Orchestration</h3>
+            <p class="feature-text">
+              Self-healing service pipelines detect performance drops and reallocate computational capacity across nodes in milliseconds without manual intervention.
+            </p>
+            <ul class="feature-bullet-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated canary rollouts & instant rollbacks</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dynamic spot instance cost optimization</span>
+              </li>
+            </ul>
+            <div class="feature-card-footer">
+              <span class="feature-link-text">Read Architecture Spec</span>
+              <svg class="feature-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="feature-card glass-card" tabindex="0">
+            <div class="feature-card-glow" aria-hidden="true"></div>
+            <div class="feature-icon-wrapper icon-violet">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Hyper-Scale Telemetry</h3>
+            <p class="feature-text">
+              High-cardinality distributed tracing and log parsing stream real-time insights straight into your console with zero ingestion bottleneck or query latency.
+            </p>
+            <ul class="feature-bullet-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Sub-second anomaly pattern recognition</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>OpenTelemetry native format compatibility</span>
+              </li>
+            </ul>
+            <div class="feature-card-footer">
+              <span class="feature-link-text">Explore Observability</span>
+              <svg class="feature-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="feature-card glass-card" tabindex="0">
+            <div class="feature-card-glow" aria-hidden="true"></div>
+            <div class="feature-icon-wrapper icon-cyan">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Zero-Trust Perimeter</h3>
+            <p class="feature-text">
+              Cryptographically verified service identity via SPIFFE/SPIRE with mutual TLS everywhere. Eliminate fragile API tokens and static keys across all environments.
+            </p>
+            <ul class="feature-bullet-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Ephemeral short-lived certificates</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Granular policy-as-code enforcement</span>
+              </li>
+            </ul>
+            <div class="feature-card-footer">
+              <span class="feature-link-text">Review Security Paper</span>
+              <svg class="feature-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-grid">
+        <!-- Contact Context Info -->
+        <div class="contact-info">
+          <span class="section-eyebrow">GET IN TOUCH</span>
+          <h2 class="section-title">Ready to modernize your infrastructure? Let's talk.</h2>
+          <p class="section-description">
+            Whether you want a personalized architectural walkthrough, custom enterprise onboarding, or technical pricing details, our platform architects are here to help.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <span class="contact-label">Direct Communication</span>
+                <a href="mailto:solutions@astraea.io" class="contact-value">solutions@astraea.io</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <span class="contact-label">Response Commitment</span>
+                <span class="contact-value">Within 2 hours for technical inquiries</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <span class="contact-label">Global Engineering Hub</span>
+                <span class="contact-value">San Francisco &bull; London &bull; Zurich</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card glass-card">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Elena Rostova" required autocomplete="name">
+                </div>
+                <span class="error-feedback" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Work Email <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="elena@company.com" required autocomplete="email">
+                </div>
+                <span class="error-feedback" id="email-error">Please enter a valid work email address.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject <span class="required">*</span></label>
+              <div class="input-wrapper select-wrapper">
+                <select id="contact-subject" name="subject" class="form-input form-select" required>
+                  <option value="" disabled selected>Select an inquiry area...</option>
+                  <option value="enterprise">Enterprise Platform Trial & POC</option>
+                  <option value="architecture">Architectural Review & Migration</option>
+                  <option value="pricing">Volume Licensing & Custom Quote</option>
+                  <option value="partnership">Technology Ecosystem Partnership</option>
+                  <option value="other">General Engineering Inquiry</option>
+                </select>
+              </div>
+              <span class="error-feedback" id="subject-error">Please select an inquiry topic.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message Details <span class="required">*</span></label>
+              <div class="input-wrapper">
+                <textarea id="contact-message" name="message" class="form-input form-textarea" rows="4" placeholder="Tell us about your infrastructure topology and deployment goals..." required></textarea>
+              </div>
+              <span class="error-feedback" id="message-error">Please provide a message (minimum 10 characters).</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit w-full" id="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+            <p class="form-note">By submitting, you agree to our <a href="#" class="inline-link">Terms of Service</a> & <a href="#" class="inline-link">Privacy Policy</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 6. FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo footer-logo">
+            <span class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>
+              </svg>
+            </span>
+            <span class="brand-name">Astraea<span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-tagline">
+            The next-generation distributed orchestrator. Built for planetary resilience, engineered for velocity.
+          </p>
+          <!-- Social Links with Crisp SVGs -->
+          <div class="social-links" aria-label="Social media channels">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+              </svg>
+            </a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Discord Community">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links Columns -->
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="#hero">Architecture Overview</a></li>
+              <li><a href="#features">Service Orchestration</a></li>
+              <li><a href="#features">Hyper-Scale Telemetry</a></li>
+              <li><a href="#features">Zero-Trust Security</a></li>
+              <li><a href="#">Release Roadmap</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Rust & Go SDKs</a></li>
+              <li><a href="#">Architecture Whitepapers</a></li>
+              <li><a href="#">Benchmarking Metrics</a></li>
+              <li><a href="#">Community Forum</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Astraea</a></li>
+              <li><a href="#contact">Contact Leadership</a></li>
+              <li><a href="#">Careers <span class="footer-badge">Hiring</span></a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Trust & Compliance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Astraea Technologies Inc. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="divider">&bull;</span>
+          <a href="#">Terms of Service</a>
+          <span class="divider">&bull;</span>
+          <a href="#">Security Disclosure</a>
+          <span class="divider">&bull;</span>
+          <a href="#">System Status</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== TOAST NOTIFICATION CONTAINER ==================== -->
+  <div id="toast-container" class="toast-container" role="region" aria-live="polite" aria-label="Notifications"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
